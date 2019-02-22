@@ -1,4 +1,4 @@
-# vectorai
+
 <h1>rest API for passport image processing</h1>
 
 <h2>Installation</h2>
