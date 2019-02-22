@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  vectorai:
+    ports:
+      - "8000:8000"
+    build: .
+    command: python3 vectorai/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/opt/services/vectorai/src
+      - static_volume:/opt/services/vectorai/static 
+      - media_volume:/opt/services/vectorai/media  
+
+
+volumes:
+  static_volume:
+  media_volume:
